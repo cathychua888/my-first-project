@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* Brand palette: lavender / soft purple on light neutrals */
+@theme inline {
+  --color-brand-50: #f7f4fe;
+  --color-brand-100: #efe9fd;
+  --color-brand-200: #e0d5fb;
+  --color-brand-300: #c9b5f6;
+  --color-brand-400: #ac8cef;
+  --color-brand-500: #9066e4;
+  --color-brand-600: #7c4dd4;
+  --color-brand-700: #683cb8;
+  --color-brand-800: #573397;
+  --color-brand-900: #482c7a;
+  --color-ink: #1f1a2e;
+  --color-muted: #5f5873;
+  --color-canvas: #fbfaff;
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-brand-500);
+  outline-offset: 2px;
+}
